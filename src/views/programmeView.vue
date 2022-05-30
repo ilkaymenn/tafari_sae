@@ -10,6 +10,12 @@
         programmation
       </h2>
     </div>
+    <card
+      class=""
+      image="/src/assets/manu_chao.jpg"
+      artiste="Manu"
+      jour="jour 1"
+    />
     <div class="mt-5 grid justify-items-center lg:grid lg:grid-cols-4">
       <artiste1 class="mb-5" />
       <artiste2 class="mb-5" />
@@ -24,6 +30,7 @@
 </template>
 
 <script>
+import card from "../components/cards/card.vue";
 import artiste1 from "../components/cards/artiste1.vue";
 import artiste2 from "../components/cards/artiste2.vue";
 import artiste3 from "../components/cards/artiste3.vue";
@@ -36,6 +43,7 @@ import artiste8 from "../components/cards/artiste8.vue";
 export default {
   name: "App",
   components: {
+    card,
     artiste1,
     artiste2,
     artiste3,

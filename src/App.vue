@@ -17,6 +17,7 @@
           <ul
             class="flex flex-col gap-8 py-4 font-bold uppercase text-blanc lg:flex-row"
           >
+            <RouterLink to="/" class="lg:hidden">Accueil</RouterLink>
             <RouterLink to="/programme">programmation</RouterLink>
             <RouterLink to="/artistes">artistes</RouterLink>
             <RouterLink to="/festival">le festival</RouterLink>
