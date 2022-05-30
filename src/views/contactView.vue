@@ -11,7 +11,7 @@
       </h2>
     </div>
     <p class="font-spinnaker text-base">
-      Contacté nous pour plus d’informations !
+      Contacté nous pour plus d’informations !!
     </p>
     <div class="mx-auto w-full md:w-96 md:max-w-full">
       <div class="p-6">
