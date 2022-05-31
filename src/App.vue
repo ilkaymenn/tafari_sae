@@ -11,11 +11,12 @@
           <MenuIcon class="w-8 cursor-pointer" @click="MenuOpen = !MenuOpen" />
         </div>
         <nav
-          class="absolute left-0 top-16 w-full -translate-y-[200%] bg-vert pl-2 text-lg lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent"
+          class="absolute left-0 top-0 h-screen w-full -translate-y-[200%] bg-vert pl-2 text-lg lg:relative lg:top-0 lg:h-min lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'"
         >
+          <XIcon class="float-right m-10 w-10" @click="MenuOpen = !MenuOpen" />
           <ul
-            class="flex flex-col gap-8 py-4 font-bold uppercase text-blanc lg:flex-row"
+            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-blanc lg:flex-row"
           >
             <RouterLink to="/" class="lg:hidden">Accueil</RouterLink>
             <RouterLink to="/programme">programmation</RouterLink>

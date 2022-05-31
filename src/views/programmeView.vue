@@ -10,21 +10,63 @@
         programmation
       </h2>
     </div>
-    <card
-      class=""
-      image="/src/assets/manu_chao.jpg"
-      artiste="Manu"
-      jour="jour 1"
-    />
     <div class="mt-5 grid justify-items-center lg:grid lg:grid-cols-4">
-      <artiste1 class="mb-5" />
-      <artiste2 class="mb-5" />
-      <artiste3 class="mb-5" />
-      <artiste4 class="mb-5" />
-      <artiste5 class="mb-5" />
-      <artiste6 class="mb-5" />
-      <artiste7 class="mb-5" />
-      <artiste8 class="mb-5" />
+      <card
+        class="bg-rouge"
+        image="/src/assets/manu_chao.jpg"
+        alt="Photohraphie de Manu Chao"
+        artiste="Manu Chao"
+        jour="jour 1"
+      />
+      <card
+        class="bg-rouge"
+        image="/src/assets/rita_marley.jpg"
+        alt="Photohraphie de Rita Marley"
+        artiste="Rita Marley"
+        jour="jour 1"
+      />
+      <card
+        class="bg-rouge"
+        image="/src/assets/alpha_blondy.jpg"
+        alt="Photohraphie de Alpha Blondy"
+        artiste="Alpha Blondy"
+        jour="jour 1"
+      />
+      <card
+        class="bg-rouge"
+        image="/src/assets/eddy_grant.jpg"
+        alt="Photohraphie de Eddy Grant"
+        artiste="Eddy Grant"
+        jour="jour 1"
+      />
+      <card
+        class="bg-vert"
+        image="/src/assets/yaniss_odua.jpg"
+        alt="Photohraphie de Yaniss Odua"
+        artiste="Yaniss Odua"
+        jour="jour 2"
+      />
+      <card
+        class="bg-vert"
+        image="/src/assets/damian_marley.jpg"
+        alt="Photohraphie de Damian Marley"
+        artiste="Damian Marley"
+        jour="jour 2"
+      />
+      <card
+        class="bg-vert"
+        image="/src/assets/pierpoljak.jpg"
+        alt="Photohraphie de Pierpoljak"
+        artiste="Pierpoljak"
+        jour="jour 2"
+      />
+      <card
+        class="bg-vert"
+        image="/src/assets/horace_andy.jpg"
+        alt="Photohraphie de Horace Andy"
+        artiste="Horace Andy"
+        jour="jour 2"
+      />
     </div>
   </div>
 </template>
