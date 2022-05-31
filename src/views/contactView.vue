@@ -17,7 +17,7 @@
     </p>
     <div class="mx-auto w-full md:w-96 md:max-w-full">
       <div class="p-6">
-        <form method="POST" action="https://herotofu.com/start">
+        <form method="" action="">
           <label class="mb-10 block">
             <div
               class="flex items-center rounded-md border-2 border-vert bg-blanc shadow-md shadow-vert"
@@ -26,7 +26,7 @@
               <input
                 name="name"
                 type="text"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none focus:ring focus:ring-vert"
+                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
                 placeholder="Nom"
                 required
               />
@@ -40,7 +40,7 @@
               <input
                 name="email"
                 type="email"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none focus:ring focus:ring-jaune"
+                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
                 placeholder="E-mail"
                 required
               />
@@ -53,7 +53,7 @@
               <MailIcon class="m-1 ml-2 h-6" />
               <textarea
                 name="message"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none focus:ring focus:ring-rouge"
+                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
                 rows="3"
                 placeholder="Message"
                 required

@@ -1,15 +1,15 @@
 <template>
-  <figure class="m-5 grid grid-flow-row-dense grid-cols-3 rounded-br-3xl">
+  <figure class="m-5 grid grid-flow-row-dense grid-cols-3 rounded-br-5xl">
     <img class="col-span-3 h-48 w-full object-cover" :src="image" alt="" />
 
     <figcaption class="relative contents w-full">
       <section class="w-full">
-        <div class="w-full text-center">
-          <h3 class="-ml-4 font-prompt text-3xl font-bold uppercase text-blanc">
+        <div class="w-50">
+          <h3 class="m-4 font-prompt text-3xl font-bold uppercase text-blanc">
             {{ artiste }}
           </h3>
           <p
-            class="-ml-12 font-roboto text-2xl capitalize text-blanc text-opacity-50"
+            class="m-4 -mt-4 font-roboto text-2xl capitalize text-blanc opacity-50"
           >
             {{ jour }}
           </p>

@@ -10,60 +10,60 @@
         programmation
       </h2>
     </div>
-    <div class="mt-5 grid justify-items-center lg:grid lg:grid-cols-4">
+    <div class="mt-10 mb-10 grid lg:grid lg:grid-cols-4">
       <card
         class="bg-rouge"
         image="/src/assets/manu_chao.jpg"
-        alt="Photohraphie de Manu Chao"
+        alt="Photographie de Manu Chao"
         artiste="Manu Chao"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
         image="/src/assets/rita_marley.jpg"
-        alt="Photohraphie de Rita Marley"
+        alt="Photographie de Rita Marley"
         artiste="Rita Marley"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
         image="/src/assets/alpha_blondy.jpg"
-        alt="Photohraphie de Alpha Blondy"
+        alt="Photographie de Alpha Blondy"
         artiste="Alpha Blondy"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
-        image="/src/assets/eddy_grant.jpg"
-        alt="Photohraphie de Eddy Grant"
+        image="/src/assets/eddy-grant.jpg"
+        alt="Photographie de Eddy Grant"
         artiste="Eddy Grant"
         jour="jour 1"
       />
       <card
         class="bg-vert"
         image="/src/assets/yaniss_odua.jpg"
-        alt="Photohraphie de Yaniss Odua"
+        alt="Photographie de Yaniss Odua"
         artiste="Yaniss Odua"
         jour="jour 2"
       />
       <card
         class="bg-vert"
         image="/src/assets/damian_marley.jpg"
-        alt="Photohraphie de Damian Marley"
+        alt="Photographie de Damian Marley"
         artiste="Damian Marley"
         jour="jour 2"
       />
       <card
         class="bg-vert"
         image="/src/assets/pierpoljak.jpg"
-        alt="Photohraphie de Pierpoljak"
+        alt="Photographie de Pierpoljak"
         artiste="Pierpoljak"
         jour="jour 2"
       />
       <card
         class="bg-vert"
         image="/src/assets/horace_andy.jpg"
-        alt="Photohraphie de Horace Andy"
+        alt="Photographie de Horace Andy"
         artiste="Horace Andy"
         jour="jour 2"
       />
