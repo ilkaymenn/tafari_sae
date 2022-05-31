@@ -14,7 +14,7 @@
         </h2>
       </div>
       <div class="m-8 lg:grid lg:grid-cols-2 lg:justify-items-center">
-        <p class="font-spinnaker text-lg text-blanc lg:ml-16 lg:mt-5">
+        <p class="mb-10 font-spinnaker text-lg text-blanc lg:ml-16 lg:mt-5">
           Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam
           rerum ut error quae ut voluptas autem et neque saepe est neque
           corrupti. Eos earum rerum qui ipsa asperiores non atque quis eum
@@ -28,7 +28,7 @@
         <img
           src="../assets/joey-thompson-4zN_-PKsbWw-unsplash.jpg"
           alt="photographie de festival"
-          class="w-96 rounded-xl border-2 border-noir lg:-mt-6"
+          class="mb-10 w-96 rounded-xl border-2 border-noir lg:-mt-6"
         />
       </div>
     </div>
@@ -50,7 +50,7 @@
         <img
           src="../assets/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg"
           alt="photographie de festival"
-          class="mt-5 w-96 rounded-xl border-2 border-noir lg:-mt-52 lg:ml-20"
+          class="mt-10 w-96 rounded-xl border-2 border-noir lg:-mt-52 lg:ml-20"
         />
       </div>
     </div>

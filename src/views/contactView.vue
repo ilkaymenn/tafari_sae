@@ -63,9 +63,9 @@
           <div class="mb-6 flex place-content-center">
             <button
               type="submit"
-              class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg text-blanc transition-colors duration-150 hover:bg-jaune"
+              class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
             >
-              Envoyer
+              envoyer
             </button>
           </div>
         </form>

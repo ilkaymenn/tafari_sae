@@ -1,1 +1,110 @@
-<template></template>
+<template>
+  <div>
+    <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
+      <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
+        concert
+      </h2>
+      <h2
+        class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-blanc"
+      >
+        concert
+      </h2>
+    </div>
+    <div class="lg:grid lg:grid-cols-4">
+      <div class="mt-10 flex place-content-center justify-evenly">
+        <div class="lg:flex lg:flex-col lg:justify-evenly">
+          <button
+            type="submit"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-rouge focus:ring focus:ring-noir"
+          >
+            tous
+          </button>
+          <button
+            type="submit"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-vert focus:ring focus:ring-noir"
+          >
+            vendredi
+          </button>
+          <button
+            type="submit"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-vert px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-jaune focus:ring focus:ring-noir"
+          >
+            samedi
+          </button>
+        </div>
+      </div>
+      <div class="mt-10 mb-10 grid lg:col-span-3 lg:grid lg:grid-cols-4">
+        <card
+          class="bg-rouge"
+          image="/src/assets/manu_chao.jpg"
+          alt="Photographie de Manu Chao"
+          artiste="Manu Chao"
+          jour="jour 1"
+        />
+        <card
+          class="bg-rouge"
+          image="/src/assets/rita_marley.jpg"
+          alt="Photographie de Rita Marley"
+          artiste="Rita Marley"
+          jour="jour 1"
+        />
+        <card
+          class="bg-rouge"
+          image="/src/assets/alpha_blondy.jpg"
+          alt="Photographie de Alpha Blondy"
+          artiste="Alpha Blondy"
+          jour="jour 1"
+        />
+        <card
+          class="bg-rouge"
+          image="/src/assets/eddy-grant.jpg"
+          alt="Photographie de Eddy Grant"
+          artiste="Eddy Grant"
+          jour="jour 1"
+        />
+        <card
+          class="bg-vert"
+          image="/src/assets/yaniss_odua.jpg"
+          alt="Photographie de Yaniss Odua"
+          artiste="Yaniss Odua"
+          jour="jour 2"
+        />
+        <card
+          class="bg-vert"
+          image="/src/assets/damian_marley.jpg"
+          alt="Photographie de Damian Marley"
+          artiste="Damian Marley"
+          jour="jour 2"
+        />
+        <card
+          class="bg-vert"
+          image="/src/assets/pierpoljak.jpg"
+          alt="Photographie de Pierpoljak"
+          artiste="Pierpoljak"
+          jour="jour 2"
+        />
+        <card
+          class="bg-vert"
+          image="/src/assets/horace_andy.jpg"
+          alt="Photographie de Horace Andy"
+          artiste="Horace Andy"
+          jour="jour 2"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import card from "../components/cards/card.vue";
+
+export default {
+  name: "App",
+  components: {
+    card,
+  },
+  data() {
+    return {};
+  },
+};
+</script>
