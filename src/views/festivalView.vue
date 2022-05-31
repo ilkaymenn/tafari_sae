@@ -13,8 +13,8 @@
           le festival
         </h2>
       </div>
-      <div class="m-10 lg:grid lg:grid-cols-2 lg:justify-items-center">
-        <p class="font-spinnaker text-lg text-blanc">
+      <div class="m-8 lg:grid lg:grid-cols-2 lg:justify-items-center">
+        <p class="font-spinnaker text-lg text-blanc lg:ml-10 lg:mt-5">
           Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam
           rerum ut error quae ut voluptas autem et neque saepe est neque
           corrupti. Eos earum rerum qui ipsa asperiores non atque quis eum
@@ -28,13 +28,15 @@
         <img
           src="../assets/joey-thompson-4zN_-PKsbWw-unsplash.jpg"
           alt="photographie de festival"
-          class="mt-5 w-80 rounded-xl border-2 border-noir"
+          class="w-96 rounded-xl border-2 border-noir lg:-mt-6"
         />
       </div>
     </div>
     <div class="border-t-2 border-noir bg-rouge">
-      <div class="m-10 lg:grid lg:grid-cols-2 lg:place-content-evenly">
-        <p class="font-spinnaker text-lg text-blanc lg:col-start-2">
+      <div class="m-10 lg:col-span-2 lg:grid lg:grid-cols-2">
+        <p
+          class="font-spinnaker text-lg text-blanc lg:col-start-2 lg:mr-10 lg:mt-20"
+        >
           Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam
           rerum ut error quae ut voluptas autem et neque saepe est neque
           corrupti. Eos earum rerum qui ipsa asperiores non atque quis eum
@@ -48,7 +50,7 @@
         <img
           src="../assets/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg"
           alt="photographie de festival"
-          class="mt-5 w-80 rounded-xl border-2 border-noir lg:col-end-1 lg:-mt-56"
+          class="mt-5 w-96 rounded-xl border-2 border-noir lg:col-start-1 lg:-mt-40 lg:ml-40"
         />
       </div>
     </div>
