@@ -12,16 +12,16 @@
     </div>
     <div class="lg:grid lg:grid-cols-4">
       <div class="mt-10 flex place-content-center justify-evenly">
-        <div class="lg:flex lg:flex-col lg:justify-evenly">
+        <div class="lg:m-16 lg:flex lg:flex-col">
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-rouge focus:ring focus:ring-noir"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-rouge focus:ring focus:ring-noir lg:mb-12"
           >
             tous
           </button>
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-vert focus:ring focus:ring-noir"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-vert focus:ring focus:ring-noir lg:mb-12"
           >
             vendredi
           </button>

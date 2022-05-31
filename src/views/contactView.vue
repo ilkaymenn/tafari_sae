@@ -1,8 +1,6 @@
 <template>
-  <div class="h-screen">
-    <div
-      class="mt-10 ml-5 grid justify-items-start lg:ml-5 lg:justify-items-center"
-    >
+  <div>
+    <div class="mt-10 ml-5 grid justify-items-start lg:ml-5">
       <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
         contact
       </h2>
@@ -12,63 +10,65 @@
         contact
       </h2>
     </div>
-    <p class="ml-5 mt-10 font-spinnaker text-base">
-      Contactez nous pour plus d’informations !!
-    </p>
-    <div class="mx-auto w-full md:w-96 md:max-w-full">
-      <div class="p-6">
-        <form method="" action="">
-          <label class="mb-10 block">
-            <div
-              class="flex items-center rounded-md border-2 border-vert bg-blanc shadow-md shadow-vert"
-            >
-              <UserRemoveIcon class="m-1 ml-2 h-6" />
-              <input
-                name="name"
-                type="text"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
-                placeholder="Nom"
-                required
-              />
+    <div class="h-screen lg:grid lg:grid-cols-2">
+      <p class="ml-5 font-spinnaker text-xl lg:col-end-1">
+        Contactez nous pour plus d’informations !!
+      </p>
+      <div class="mx-auto w-full md:w-96 md:max-w-full lg:col-start-2">
+        <div class="p-6">
+          <form method="" action="">
+            <label class="mb-10 block">
+              <div
+                class="flex items-center rounded-md border-2 border-vert bg-blanc shadow-md shadow-vert"
+              >
+                <UserRemoveIcon class="m-1 ml-2 h-6" />
+                <input
+                  name="name"
+                  type="text"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  placeholder="Nom"
+                  required
+                />
+              </div>
+            </label>
+            <label class="mb-10 block">
+              <div
+                class="flex items-center rounded-md border-2 border-jaune bg-blanc shadow-md shadow-jaune"
+              >
+                <PencilIcon class="m-1 ml-2 h-6" />
+                <input
+                  name="email"
+                  type="email"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+            </label>
+            <label class="mb-10 block">
+              <div
+                class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge"
+              >
+                <MailIcon class="m-1 ml-2 h-6" />
+                <textarea
+                  name="message"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  rows="3"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+            </label>
+            <div class="mb-6 flex place-content-center">
+              <button
+                type="submit"
+                class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
+              >
+                envoyer
+              </button>
             </div>
-          </label>
-          <label class="mb-10 block">
-            <div
-              class="flex items-center rounded-md border-2 border-jaune bg-blanc shadow-md shadow-jaune"
-            >
-              <PencilIcon class="m-1 ml-2 h-6" />
-              <input
-                name="email"
-                type="email"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
-                placeholder="E-mail"
-                required
-              />
-            </div>
-          </label>
-          <label class="mb-10 block">
-            <div
-              class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge"
-            >
-              <MailIcon class="m-1 ml-2 h-6" />
-              <textarea
-                name="message"
-                class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
-                rows="3"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-          </label>
-          <div class="mb-6 flex place-content-center">
-            <button
-              type="submit"
-              class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
-            >
-              envoyer
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
