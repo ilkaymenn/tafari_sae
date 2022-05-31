@@ -10,7 +10,9 @@
         les artistes
       </h2>
     </div>
-    <div class="mt-10 mb-10 grid lg:grid lg:grid-cols-4">
+    <div
+      class="mt-10 mb-10 grid sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4"
+    >
       <card
         class="bg-rouge"
         image="/src/assets/alpha_blondy.jpg"
