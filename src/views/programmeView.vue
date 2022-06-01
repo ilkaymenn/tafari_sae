@@ -25,7 +25,7 @@
           artiste="Manu Chao"
           jour="jour 1"
         />
-        <RouterLink to="/">
+        <RouterLink to="/manuchao">
           <div class="ml-80 -mt-16">
             <button
               class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
