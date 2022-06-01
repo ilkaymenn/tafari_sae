@@ -4,7 +4,7 @@
       class="grid justify-items-center border-b-2 border-noir bg-vert p-14 text-blanc"
     >
       <img
-        src="../../public/danny-howe.jpg"
+        src="../../public/image-accueil.png"
         alt="image de festival"
         class="h-44 rounded-xl border-2 border-noir lg:mt-24"
       />
