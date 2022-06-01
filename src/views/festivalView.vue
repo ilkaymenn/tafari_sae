@@ -2,7 +2,7 @@
   <div class="grid justify-items-center">
     <div class="border-b-2 border-noir bg-jaune text-center lg:text-right">
       <div
-        class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start"
+        class="mt-12 grid justify-items-center lg:ml-12 lg:justify-items-start"
       >
         <h2 class="font-reggae-by-aslam text-4xl capitalize text-blanc">
           le festival

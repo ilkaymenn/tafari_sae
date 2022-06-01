@@ -1,9 +1,16 @@
 <template>
-  <div class="mb-8">
-    <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
+  <div class="mb-16 lg:mb-5">
+    <div
+      class="mt-10 grid justify-items-center lg:ml-10 lg:justify-items-start"
+    >
       <div class="bg-gradient-to-br from-vert via-jaune to-rouge p-2">
-        <h2 class="ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir">
-          les artistes
+        <h2 class="font-reggae-by-aslam text-4xl capitalize text-blanc">
+          le concert
+        </h2>
+        <h2
+          class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir"
+        >
+          le concert
         </h2>
       </div>
     </div>
