@@ -1,14 +1,11 @@
 <template>
   <div class="mb-10">
     <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
-      <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
-        mentions légales
-      </h2>
-      <h2
-        class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-blanc"
-      >
-        mentions légales
-      </h2>
+      <div class="bg-gradient-to-br from-vert via-jaune to-rouge p-2">
+        <h2 class="ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir">
+          mentions légales
+        </h2>
+      </div>
     </div>
     <div class="m-8 font-sans text-xl font-normal">
       <p class="mt-4">Le site www.tafari.com est édité par :</p>
@@ -23,7 +20,11 @@
 
       <p class="mt-4">Le site www.tafari.com est hébergé par : 1&1 IONOS</p>
 
-      <h3 class="mt-5 font-semibold uppercase">accès au site</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        accès au site
+      </h3>
       <p>
         Le site www.tafari.com est accessible gratuitement à tout utilisateur
         disposant d’un accès à internet. Tous les coûts afférents à l’accès au
@@ -45,7 +46,11 @@
         toute autre raison, sans que l’interruption n’ouvre droit à aucune
         obligation ni indemnisation.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">propriété intellectuelle</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        propriété intellectuelle
+      </h3>
       <p>
         Le site www.tafari.com, notamment son contenu, est protégé par le droit
         en vigueur en France. TAFARI est le titulaire exclusif de l’intégralité
@@ -57,7 +62,11 @@
         reproduction ou sa diffusion, sans autorisation expresse écrite de
         TAFARI, constitue une contrefaçon passible de sanctions pénales.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">données personnelles</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        données personnelles
+      </h3>
       <p>
         Dans une logique de respect de la vie privée de ses utilisateurs, TAFARI
         s’engage à ce que la collecte et le traitement d’informations
@@ -72,7 +81,11 @@
         nominatives le concernant. L’utilisateur a la possibilité d’exercer ce
         droit en rentrant directement en contact avec TAFARI.
       </p>
-      <h3 class="mt-4 font-semibold uppercase">limites de responsabilité</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        limites de responsabilité
+      </h3>
       <p>
         Les informations diffusées sur le site www.tafari.com proviennent de
         sources réputées fiables. Toutefois, TAFARI ne peut garantir
@@ -90,7 +103,11 @@
         d’une manière générale, à respecter l’ensemble de la réglementation en
         vigueur en France.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">liens hypertextes</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        liens hypertextes
+      </h3>
       <p>
         Le site www.tafari.com propose des liens hypertextes vers des sites web
         édités et/ou gérés par des tiers. Dans la mesure où aucun contrôle n’est
@@ -98,7 +115,11 @@
         n’assume aucune responsabilité relative à la mise à disposition de ces
         ressources, et ne peut être tenue responsable quant à leur contenu.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">cookies</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        cookies
+      </h3>
       <p>
         Les cookies sont de petits fichiers électroniques qu’un site Web peut
         transférer sur le disque dur d’un utilisateur pour identifier ce dernier
@@ -110,12 +131,18 @@
         également refuser les cookies pour cela vous devez précisez la procédure
         pour supprimer les cookies sur un poste.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">durée</h3>
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
+        durée
+      </h3>
       <p>
         Le présent contrat est conclu pour une durée indéterminée à compter de
         l’utilisation du site www.tafari.com.
       </p>
-      <h3 class="mt-5 font-semibold uppercase">
+      <h3
+        class="mt-6 w-fit bg-gradient-to-br from-vert via-jaune to-rouge font-semibold uppercase"
+      >
         droit applicable et juridiction compétente
       </h3>
       <p>
