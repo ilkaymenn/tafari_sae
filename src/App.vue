@@ -21,12 +21,24 @@
           <ul
             class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-blanc lg:flex-row"
           >
-            <RouterLink to="/" class="lg:hidden">accueil</RouterLink>
-            <RouterLink to="/programme">programmation</RouterLink>
-            <RouterLink to="/artistes">artistes</RouterLink>
-            <RouterLink to="/festival">le festival</RouterLink>
-            <RouterLink to="/concert">concert</RouterLink>
-            <RouterLink to="/contact">contact</RouterLink>
+            <RouterLink to="/" class="lg:hidden" @click="MenuOpen = !MenuOpen"
+              >accueil</RouterLink
+            >
+            <RouterLink to="/programme" @click="MenuOpen = !MenuOpen"
+              >programmation</RouterLink
+            >
+            <RouterLink to="/artistes" @click="MenuOpen = !MenuOpen"
+              >artistes</RouterLink
+            >
+            <RouterLink to="/festival" @click="MenuOpen = !MenuOpen"
+              >le festival</RouterLink
+            >
+            <RouterLink to="/concert" @click="MenuOpen = !MenuOpen"
+              >concert</RouterLink
+            >
+            <RouterLink to="/contact" @click="MenuOpen = !MenuOpen"
+              >contact</RouterLink
+            >
           </ul>
         </nav>
       </div>
