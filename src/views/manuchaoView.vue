@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div>
       <div class="mt-4">
         <img
           src="../../public/icon-rasta.png"
@@ -42,16 +42,16 @@
           </p>
         </div>
       </div>
-      <div class="lg:grid-cols-4">
+      <div class="lg:mr-60 lg:grid-cols-4">
         <div class="mt-6 grid place-content-end">
           <img
             src="../../public/manu-chao.jpg"
             alt=""
-            class="lg:mt-10 lg:h-96"
+            class="lg:mt-10 lg:h-72"
           />
         </div>
         <div
-          class="mt-5 mr-8 bg-gradient-to-b from-vert via-jaune to-rouge p-3 lg:w-80"
+          class="mt-5 mr-8 bg-gradient-to-b from-vert via-jaune to-rouge p-3 lg:-mt-72 lg:ml-60 lg:w-96"
         >
           <p class="text-nase font-spinnaker text-noir">
             Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam
