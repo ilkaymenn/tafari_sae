@@ -5,7 +5,7 @@
         programmation
       </h2>
       <h2
-        class="-mt-9 ml-0.5 bg-gradient-to-b from-vert via-jaune to-rouge font-reggae-by-aslam text-4xl capitalize text-blanc"
+        class="-mt-9 ml-0.5 bg-gradient-to-b from-vert via-jaune to-rouge font-reggae-by-aslam text-4xl capitalize text-noir"
       >
         programmation
       </h2>
@@ -15,56 +15,56 @@
     >
       <card
         class="bg-rouge"
-        image="/src/assets/manu_chao.jpg"
+        image="../../public/manu-chao.jpg"
         alt="Photographie de Manu Chao"
         artiste="Manu Chao"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
-        image="/src/assets/rita_marley.jpg"
+        image="../../rita-marley.jpg"
         alt="Photographie de Rita Marley"
         artiste="Rita Marley"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
-        image="/src/assets/alpha_blondy.jpg"
+        image="../../alpha-blondy.jpg"
         alt="Photographie de Alpha Blondy"
         artiste="Alpha Blondy"
         jour="jour 1"
       />
       <card
         class="bg-rouge"
-        image="/src/assets/eddy-grant.jpg"
+        image="../../eddy-grant.jpg"
         alt="Photographie de Eddy Grant"
         artiste="Eddy Grant"
         jour="jour 1"
       />
       <card
         class="bg-vert"
-        image="/src/assets/yaniss_odua.jpg"
+        image="../../yaniss-odua.jpg"
         alt="Photographie de Yaniss Odua"
         artiste="Yaniss Odua"
         jour="jour 2"
       />
       <card
         class="bg-vert"
-        image="/src/assets/damian_marley.jpg"
+        image="../../damian-marley.jpg"
         alt="Photographie de Damian Marley"
         artiste="Damian Marley"
         jour="jour 2"
       />
       <card
         class="bg-vert"
-        image="/src/assets/pierpoljak.jpg"
+        image="../../pierpoljak.jpg"
         alt="Photographie de Pierpoljak"
         artiste="Pierpoljak"
         jour="jour 2"
       />
       <card
         class="bg-vert"
-        image="/src/assets/horace_andy.jpg"
+        image="../../horace-andy.jpg"
         alt="Photographie de Horace Andy"
         artiste="Horace Andy"
         jour="jour 2"
