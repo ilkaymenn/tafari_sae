@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-8">
     <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
       <div class="bg-gradient-to-br from-vert via-jaune to-rouge p-2">
         <h2 class="ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir">
@@ -12,13 +12,13 @@
         <div class="lg:m-16 lg:flex lg:flex-col">
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge lg:mb-12"
           >
             tous
           </button>
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge focus:ring focus:ring-noir lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge lg:mb-12"
           >
             vendredi
           </button>
@@ -42,7 +42,7 @@
             jour="jour 1"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -59,7 +59,7 @@
             jour="jour 1"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -76,7 +76,7 @@
             jour="jour 1"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -93,7 +93,7 @@
             jour="jour 1"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -110,7 +110,7 @@
             jour="jour 2"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -127,7 +127,7 @@
             jour="jour 2"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -144,7 +144,7 @@
             jour="jour 2"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -161,7 +161,7 @@
             jour="jour 2"
           />
           <RouterLink to="/">
-            <div class="ml-80 -mt-16">
+            <div class="ml-80 -mt-16 lg:-mt-16 lg:ml-48">
               <button
                 class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
               >
@@ -176,11 +176,13 @@
 
 <script>
 import card from "../components/cards/card.vue";
+import { PlusIcon } from "@heroicons/vue/outline";
 
 export default {
   name: "App",
   components: {
     card,
+    PlusIcon,
   },
   data() {
     return {};
