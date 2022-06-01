@@ -27,11 +27,13 @@
         alt="image de festival"
         class="h-44 rounded-xl border-2 border-noir lg:mt-24"
       />
-      <h2
-        class="pt-5 font-prompt text-3xl font-bold capitalize underline underline-offset-4 lg:-mt-96"
-      >
-        Le festival <span class="uppercase">TAFARI</span>
-      </h2>
+      <RouterLink to="/festival">
+        <h2
+          class="pt-5 font-prompt text-3xl font-bold capitalize underline underline-offset-4 lg:-mt-96"
+        >
+          Le festival <span class="uppercase">TAFARI</span>
+        </h2>
+      </RouterLink>
       <p class="pt-5 font-spinnaker text-lg text-noir lg:-mt-52">
         Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam rerum
         ut error quae ut voluptas autem et neque saepe est neque corrupti. Eos
@@ -46,11 +48,13 @@
         alt="image de festival"
         class="h-44 rounded-xl border-2 border-noir lg:mt-24"
       />
-      <h2
-        class="pt-5 font-prompt text-3xl font-bold capitalize underline underline-offset-4 lg:-mt-96"
-      >
-        les artistes
-      </h2>
+      <RouterLink to="/artistes">
+        <h2
+          class="pt-5 font-prompt text-3xl font-bold capitalize underline underline-offset-4 lg:-mt-96"
+        >
+          les artistes
+        </h2>
+      </RouterLink>
       <p class="pt-5 font-spinnaker text-lg text-blanc lg:-mt-52">
         Lorem ipsum dolor sit amet. Et repudiandae doloribus ea quibusdam rerum
         ut error quae ut voluptas autem et neque saepe est neque corrupti. Eos
