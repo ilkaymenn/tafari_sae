@@ -46,15 +46,15 @@
     <div class="border-t-4 border-b-4 border-noir"><hr /></div>
     <RouterView />
     <footer>
-      <div class="bg-noir pt-4">
+      <div class="bg-noir pt-4 lg:flex lg:justify-around">
         <div class="mx-5 h-10">
           <div
             class="flex justify-between text-base font-semibold capitalize text-blanc"
           >
-            <div>
+            <div class="lg:mr-20">
               <RouterLink to="/mentions">mentions légales</RouterLink>
             </div>
-            <div>
+            <div class="lg:mr-20">
               <RouterLink to="/contact">contact</RouterLink>
             </div>
             <div class="uppercase">
