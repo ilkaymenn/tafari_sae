@@ -13,7 +13,7 @@
     <img
       src="../../public/page-construction.png"
       alt=""
-      class="-mt-80 h-96 lg:-mt-36"
+      class="-mt-80 ml-12 h-96 lg:-mt-36"
     />
   </div>
 </template>
