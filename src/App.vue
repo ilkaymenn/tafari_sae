@@ -4,7 +4,7 @@
       <div class="flex h-full w-full items-center justify-between">
         <div class="flex items-center pt-9">
           <RouterLink to="/">
-            <img src="./assets/tafari.png" alt="Logo Tafari" />
+            <img src="./../public/tafari-logo.png" alt="Logo Tafari" />
           </RouterLink>
         </div>
         <div class="lg:hidden">
