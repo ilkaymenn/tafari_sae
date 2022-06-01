@@ -15,11 +15,11 @@
         <p class="ml-5 font-spinnaker text-xl">
           Contactez nous pour plus d’informations !!
         </p>
-        <div class="mt-10 flex h-80 place-content-center">
+        <div class="invisible mt-10 flex h-80 place-content-center lg:visible">
           <img src="../assets/logo.png" alt="logo tafari" />
         </div>
       </div>
-      <div class="w-full md:w-96 md:max-w-full lg:w-full">
+      <div class="-mt-80 w-full lg:mt-0 lg:w-full">
         <div class="p-6">
           <form method="" action="">
             <label class="mb-10 block">
@@ -73,6 +73,9 @@
               </button>
             </div>
           </form>
+        </div>
+        <div class="visible flex h-80 place-content-center lg:invisible">
+          <img src="../assets/logo.png" alt="logo tafari" />
         </div>
       </div>
     </div>
