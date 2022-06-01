@@ -20,26 +20,9 @@
       <div>
         <card
           class="bg-rouge"
-          image="../../public/manu-chao.jpg"
-          alt="Photographie de Manu Chao"
-          artiste="Manu Chao"
-          jour="jour 1"
-        />
-        <RouterLink to="/manuchao">
-          <div class="ml-80 -mt-16">
-            <button
-              class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
-            >
-              <PlusIcon class="h-10" />
-            </button></div
-        ></RouterLink>
-      </div>
-      <div>
-        <card
-          class="bg-rouge"
-          image="../../rita-marley.jpg"
-          alt="Photographie de Rita Marley"
-          artiste="Rita Marley"
+          image="../../alpha-blondy.jpg"
+          alt="Photographie de Alpha Blondy"
+          artiste="Alpha Blondy"
           jour="jour 1"
         />
         <RouterLink to="/pageconstruction">
@@ -53,11 +36,11 @@
       </div>
       <div>
         <card
-          class="bg-rouge"
-          image="../../alpha-blondy.jpg"
-          alt="Photographie de Alpha Blondy"
-          artiste="Alpha Blondy"
-          jour="jour 1"
+          class="bg-vert"
+          image="../../damian-marley.jpg"
+          alt="Photographie de Damian Marley"
+          artiste="Damian Marley"
+          jour="jour 2"
         />
         <RouterLink to="/pageconstruction">
           <div class="ml-80 -mt-16">
@@ -88,9 +71,9 @@
       <div>
         <card
           class="bg-vert"
-          image="../../yaniss-odua.jpg"
-          alt="Photographie de Yaniss Odua"
-          artiste="Yaniss Odua"
+          image="../../horace-andy.jpg"
+          alt="Photographie de Horace Andy"
+          artiste="Horace Andy"
           jour="jour 2"
         />
         <RouterLink to="/pageconstruction">
@@ -104,14 +87,14 @@
       </div>
       <div>
         <card
-          class="bg-vert"
-          image="../../damian-marley.jpg"
-          alt="Photographie de Damian Marley"
-          artiste="Damian Marley"
-          jour="jour 2"
+          class="bg-rouge"
+          image="../../public/manu-chao.jpg"
+          alt="Photographie de Manu Chao"
+          artiste="Manu Chao"
+          jour="jour 1"
         />
-        <RouterLink to="/pageconstruction">
-          <div class="ml-80 -mt-16">
+        <RouterLink to="/manuchao">
+          <div class="ml-80 -mt-16 lg:ml-48 lg:-mt-16">
             <button
               class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
             >
@@ -138,10 +121,27 @@
       </div>
       <div>
         <card
+          class="bg-rouge"
+          image="../../rita-marley.jpg"
+          alt="Photographie de Rita Marley"
+          artiste="Rita Marley"
+          jour="jour 1"
+        />
+        <RouterLink to="/pageconstruction">
+          <div class="ml-80 -mt-16">
+            <button
+              class="rounded-full bg-jaune hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
+            >
+              <PlusIcon class="h-10" />
+            </button></div
+        ></RouterLink>
+      </div>
+      <div>
+        <card
           class="bg-vert"
-          image="../../horace-andy.jpg"
-          alt="Photographie de Horace Andy"
-          artiste="Horace Andy"
+          image="../../yaniss-odua.jpg"
+          alt="Photographie de Yaniss Odua"
+          artiste="Yaniss Odua"
           jour="jour 2"
         />
         <RouterLink to="/pageconstruction">
