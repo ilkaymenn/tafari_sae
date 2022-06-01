@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gris">
-    <header class="sticky top-0 z-40 h-16 w-full bg-vert px-3">
+    <header class="sticky top-0 z-40 h-16 w-full bg-vert px-3 lg:pl-8 lg:pr-8">
       <div class="flex h-full w-full items-center justify-between">
-        <div class="flex items-center pt-9">
+        <div class="pt-9">
           <RouterLink to="/">
             <img src="./../public/tafari-logo.png" alt="Logo Tafari" />
           </RouterLink>
