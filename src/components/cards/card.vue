@@ -21,6 +21,8 @@
 
 <script>
 export default {
+  name: "App",
+  components: {},
   props: {
     artiste: String,
     image: String,
