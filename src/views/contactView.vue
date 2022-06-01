@@ -5,7 +5,7 @@
         contact
       </h2>
       <h2
-        class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-blanc"
+        class="guidesl -mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-blanc"
       >
         contact
       </h2>
@@ -50,11 +50,11 @@
                 />
               </div>
             </label>
-            <label class="mb-10 block">
+            <label class="blocks mb-10">
               <div
                 class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge"
               >
-                <MailIcon class="m-1 ml-2 h-6" />
+                <MailIcon class="animate- m-1 ml-2 h-6 animate-ping" />
                 <textarea
                   name="message"
                   class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
@@ -64,10 +64,25 @@
                 ></textarea>
               </div>
             </label>
+            <div class="mb-6 md:flex md:items-center">
+              <div class="md:w-1/3"></div>
+              <label class="block font-bold text-black md:w-2/3">
+                <input class="mr-2 leading-tight" type="checkbox" />
+                <span class="text-sm"> Send me your newsletter! </span>
+              </label>
+            </div>
             <div class="mb-6 mt-10 flex place-content-center lg:mt-16">
               <button
                 type="submit"
                 class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
+              >
+                envoyer
+              </button>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc"
               >
                 envoyer
               </button>
