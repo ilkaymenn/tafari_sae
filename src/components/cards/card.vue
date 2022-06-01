@@ -1,5 +1,5 @@
 <template>
-  <figure class="m-5 grid grid-flow-row-dense grid-cols-1 rounded-br-5xl">
+  <figure class="m-5 mt-10 grid grid-flow-row-dense grid-cols-1 rounded-br-5xl">
     <img class="col-span-3 h-48 w-full object-cover" :src="image" alt="" />
 
     <figcaption class="relative contents w-full">
