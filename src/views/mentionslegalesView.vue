@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-10">
     <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
       <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
         mentions légales

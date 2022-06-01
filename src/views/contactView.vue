@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mt-10 ml-5 grid justify-items-start lg:ml-5">
+    <div class="mt-10 ml-5 lg:ml-5">
       <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
         contact
       </h2>
@@ -10,11 +10,16 @@
         contact
       </h2>
     </div>
-    <div class="h-screen lg:grid lg:grid-cols-2">
-      <p class="ml-5 font-spinnaker text-xl lg:col-end-1">
-        Contactez nous pour plus d’informations !!
-      </p>
-      <div class="mx-auto w-full md:w-96 md:max-w-full lg:col-start-2">
+    <div class="m-8 h-screen lg:grid lg:grid-cols-2">
+      <div class="lg:-mt-96 lg:grid lg:place-content-center">
+        <p class="ml-5 font-spinnaker text-xl">
+          Contactez nous pour plus d’informations !!
+        </p>
+        <div class="mt-10 flex h-80 place-content-center">
+          <img src="../assets/logo.png" alt="logo tafari" />
+        </div>
+      </div>
+      <div class="w-full md:w-96 md:max-w-full lg:w-full">
         <div class="p-6">
           <form method="" action="">
             <label class="mb-10 block">
@@ -59,7 +64,7 @@
                 ></textarea>
               </div>
             </label>
-            <div class="mb-6 flex place-content-center">
+            <div class="mb-6 mt-10 flex place-content-center lg:mt-16">
               <button
                 type="submit"
                 class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
