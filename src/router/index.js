@@ -8,6 +8,7 @@ import concertView from "../views/concertView.vue";
 import contactView from "../views/contactView.vue";
 import mentionslegalesView from "../views/mentionslegalesView.vue";
 import page404View from "../views/page404View.vue";
+import pageEnConstructionView from "../views/pageEnConstructionView.vue";
 import chatView from "../views/chatView.vue";
 
 const router = createRouter({
@@ -29,6 +30,11 @@ const router = createRouter({
       path: "/:pathMatch(.*)*",
       name: "page404View",
       component: page404View,
+    },
+    {
+      path: "/pageconstruction",
+      name: "pageEnConstructionView",
+      component: pageEnConstructionView,
     },
     {
       path: "/chatView",
