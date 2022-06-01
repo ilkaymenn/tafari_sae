@@ -1,17 +1,14 @@
 <template>
-  <div>
+  <div class="">
     <div class="mt-10 grid justify-items-center lg:ml-5 lg:justify-items-start">
-      <h2 class="font-reggae-by-aslam text-4xl capitalize text-noir">
-        programmation
-      </h2>
-      <h2
-        class="-mt-9 ml-0.5 bg-gradient-to-b from-vert via-jaune to-rouge font-reggae-by-aslam text-4xl capitalize text-noir"
-      >
-        programmation
-      </h2>
+      <div class="bg-gradient-to-br from-vert via-jaune to-rouge p-2">
+        <h2 class="ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir">
+          programmation
+        </h2>
+      </div>
     </div>
     <div
-      class="mt-10 mb-10 grid sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4"
+      class="mb-10 grid sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4"
     >
       <div>
         <card
