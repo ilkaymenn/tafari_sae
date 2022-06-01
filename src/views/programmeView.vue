@@ -5,7 +5,7 @@
         programmation
       </h2>
       <h2
-        class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-blanc"
+        class="-mt-9 ml-0.5 bg-gradient-to-b from-vert via-jaune to-rouge font-reggae-by-aslam text-4xl capitalize text-blanc"
       >
         programmation
       </h2>

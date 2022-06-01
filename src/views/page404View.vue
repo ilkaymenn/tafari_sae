@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen bg-gradient-to-b from-vert to-jaune to-rouge text-center"
+    class="h-screen bg-gradient-to-b from-vert via-jaune to-rouge text-center"
   >
     <h2 class="text-9xl text-noir">404</h2>
     <p class="text-7xl capitalize text-noir">page not found</p>
@@ -13,5 +13,16 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
+
+    <img
+      src="../../public/rasta.png"
+      alt=""
+      class="m-10 mb-10 h-10 animate-bounce"
+    />
+    <button
+      class="mt-20 mb-20 bg-noir text-blanc transition duration-150 ease-out hover:ease-in"
+    >
+      Essaie
+    </button>
   </div>
 </template>

@@ -74,7 +74,7 @@
             <div class="mb-6 mt-10 flex place-content-center lg:mt-16">
               <button
                 type="submit"
-                class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-150 hover:bg-jaune"
+                class="focus:shadow-outline h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc transition-colors duration-300 duration-150 ease-in-out hover:bg-jaune"
               >
                 envoyer
               </button>
@@ -82,7 +82,7 @@
             <div>
               <button
                 type="submit"
-                class="h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc"
+                class="h-10 bg-rouge px-5 font-open-sans text-lg capitalize text-blanc shadow-2xl transition-shadow duration-200 ease-in-out"
               >
                 envoyer
               </button>

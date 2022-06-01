@@ -15,19 +15,19 @@
         <div class="lg:m-16 lg:flex lg:flex-col">
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-rouge focus:ring focus:ring-noir lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:border-noir hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge lg:mb-12"
           >
             tous
           </button>
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-vert focus:ring focus:ring-noir lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-rouge px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge focus:ring focus:ring-noir lg:mb-12"
           >
             vendredi
           </button>
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-vert px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-jaune focus:ring focus:ring-noir"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-vert px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge"
           >
             samedi
           </button>
