@@ -62,16 +62,16 @@
                 <textarea
                   name="message"
                   class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
-                  rows="3"
+                  rows="4"
                   placeholder="Message"
                   required
                 ></textarea>
               </div>
             </label>
-            <div class="mb-6 -mt-3 flex items-center">
+            <div class="-mb-6 -mt-3 flex items-center lg:mb-1">
               <div class="ml-3 mt-20 lg:w-1/3"></div>
               <label class="block">
-                <input class="mr-2 leading-tight" type="checkbox" />
+                <input class="mr-2 leading-tight lg:mt-5" type="checkbox" />
                 <span class="font-sans text-lg font-semibold text-noir">
                   Send me your newsletter !
                 </span>
