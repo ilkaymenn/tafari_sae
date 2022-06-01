@@ -15,11 +15,11 @@
           :class="MenuOpen && 'translate-y-0'"
         >
           <XIcon
-            class="float-right m-10 w-10 lg:hidden"
+            class="float-right m-3 w-10 lg:hidden"
             @click="MenuOpen = !MenuOpen"
           />
           <ul
-            class="mt-32 ml-20 flex flex-col gap-8 py-4 font-bold uppercase text-blanc lg:flex-row"
+            class="mt-32 ml-16 flex flex-col gap-8 py-4 text-xl font-bold uppercase text-blanc lg:flex-row lg:text-lg"
           >
             <RouterLink to="/" class="lg:hidden" @click="MenuOpen = !MenuOpen"
               >accueil</RouterLink
