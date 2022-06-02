@@ -20,7 +20,7 @@
       <div>
         <card
           class="bg-rouge"
-          image="../../public/manu-chao.jpg"
+          image="../../manu-chao.jpg"
           alt="Photographie de Manu Chao"
           artiste="Manu Chao"
           jour="jour 1"
