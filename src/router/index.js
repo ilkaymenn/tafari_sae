@@ -1,4 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
+
+// Fonction d'authentification
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+// Fonctions Firestore
+import {
+  getFirestore,
+  collection,
+  onSnapshot,
+  query,
+  where,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
 import accueilView from "../views/accueilView.vue";
 import programmeView from "../views/programmeView.vue";
 import artistesView from "../views/artistesView.vue";
@@ -17,7 +30,12 @@ const router = createRouter({
   routes: [
     { path: "/", name: "accueilView", component: accueilView },
     { path: "/programme", name: "programmeView", component: programmeView },
-    { path: "/artistes", name: "artistesView", component: artistesView },
+    {
+      path: "/artistes",
+      name: "artistesView",
+      component: artistesView,
+      beforeEnter: guard,
+    },
     { path: "/manuchao", name: "manuchaoView", component: manuchaoView },
     { path: "/festival", name: "festivalView", component: festivalView },
     { path: "/concert", name: "concertView", component: concertView },
@@ -49,5 +67,47 @@ const router = createRouter({
     },
   ],
 });
+
+// On créé un guard : Observateur (fonction) permettant de savoir si un utilisateur
+// a le droit d'utiliser une route
+// paramètres : to : d'où il vient, from où il veut aller, next où il doit aller après contrôle
+function guard(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User connecté
+      console.log("router OK => user ", user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+        let userInfo = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        // userInfo étant un tableau, on récupère
+        // ses informations dans la 1° cellule du tableau : 0
+        let isAdmin = userInfo[0].admin;
+        if (isAdmin) {
+          // Utilisateur administrateur, on autorise la page/vue
+          next(to.params.name);
+          return;
+        } else {
+          // Utilisateur non administrateur, renvoi sur accueil
+          alert("Vous n'avez pas l'autorisation pour cette fonction");
+          next({ name: "accueilView" });
+          return;
+        }
+      });
+    } else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log("router NOK => user ", user);
+      next({ name: "accueilView" });
+    }
+  });
+}
 
 export default router;
