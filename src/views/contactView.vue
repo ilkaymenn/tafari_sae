@@ -58,7 +58,7 @@
               <div
                 class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge"
               >
-                <MailIcon class="m-1 ml-2 h-6 animate-pulse" />
+                <MailIcon class="m-1 ml-2 h-6 animate-bounce" />
                 <textarea
                   name="message"
                   class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
