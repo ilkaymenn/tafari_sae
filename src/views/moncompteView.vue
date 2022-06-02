@@ -1,190 +1,248 @@
 <template>
-  <div class="relative mt-12 grid grid-cols-1 gap-20 px-5 lg:grid-cols-2">
-    <div>
-      <form
-        class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1"
-        @submit.prevent="onCnx"
-      >
-        <fieldset class="contents">
-          <legend class="col-span-full my-1 border-b-2">Se connecter</legend>
-          <label>Email :</label>
-          <input
-            type="email"
-            class="rounded-sm border-2 text-black"
-            v-model="user.email"
-            required
-          />
-          <label>Password : </label>
-          <input
-            class="rounded-sm border-2 text-black"
-            type="password"
-            v-model="user.password"
-            required
-          />
+  <div class="container">
+    <div class="card bg-dark">
+      <div class="row">
+        <div class="col-6">
+          <div class="card-header">
+            <h5 style="color: white">Connexion</h5>
+          </div>
 
-          <button type="submit">Se Connecter</button>
-          <button type="button" @click="onDcnx()">Se Déconnecter</button>
-        </fieldset>
-      </form>
-      <p
-        class="mt-5 w-full rounded-sm bg-yellow-100 py-3 text-center text-black"
-      >
-        {{ message }}
-      </p>
-    </div>
-    <div>
-      <form
-        class="grid grid-cols-[minmax(max-content,8rem)_minmax(10rem,35rem)] gap-1"
-        @submit.prevent="onCreate"
-      >
-        <fieldset class="contents">
-          <legend class="col-span-full my-1 border-b-2">Créer un compte</legend>
-          <label>Login :</label>
-          <input
-            type="text"
-            class="rounded-sm border-2 text-black"
-            v-model="user.login"
-          />
-          <label>Email :</label>
-          <input
-            type="email"
-            class="rounded-sm border-2 text-black"
-            v-model="user.email"
-          />
-          <label>Password : </label>
-          <input
-            type="password"
-            class="rounded-sm border-2 text-black"
-            v-model="user.password"
-          />
-          <label>Répéter le Password : </label>
-          <input
-            class="rounded-sm border-2 text-black"
-            type="password"
-            v-model="password2"
-          />
-          <button type="submit">Créer</button>
-        </fieldset>
-      </form>
-    </div>
-    <div>
-      <p>Exemple compte admin :</p>
-      <p class="pl-5">email : toto@gmail.com</p>
-      <p class="pl-5">mdp : CompteAdmin</p>
-      <p>Exemple compte classique :</p>
-      <p class="pl-5">email : toto@yahoo.com</p>
-      <p class="pl-5">mdp : Compte</p>
+          <form @submit.prevent="onCnx">
+            <div class="card-body">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Adresse mail"
+                    type="email"
+                    v-model="user.email"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Mot de passe</span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Mot de passe"
+                    :type="type"
+                    v-model="user.password"
+                    required
+                  />
+                  <div class="input-group-after">
+                    <button class="btn btn-light" @click.prevent="affiche()">
+                      <i class="fa fa-eye fa-lg"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-warning" role="alert">
+                {{ message }}
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <button type="submit" class="btn btn-dark float-left">
+                Connexion
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark float-right"
+                @click="onDcnx()"
+              >
+                Deconnexion
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-6">
+          <div class="card-header">
+            <h5 style="color: white">S'inscrire</h5>
+          </div>
+
+          <form>
+            <div class="card-body">
+              <div class="row">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Login</span>
+                  </div>
+                  <input class="form-control" placeholder="Login" required />
+                </div>
+
+                <div class="w-100 mb-3 text-center" v-if="imageData">
+                  <img class="preview img-fluid" :src="imageData" />
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Photo</span>
+                  </div>
+                  <div class="custom-file">
+                    <input
+                      type="file"
+                      class="custom-file-input"
+                      ref="file"
+                      id="file"
+                      @change="previewImage"
+                    />
+                    <label class="custom-file-label" for="file"
+                      >Sélectionner l'image</label
+                    >
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Adresse mail"
+                    type="email"
+                    required
+                  />
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Mot de passe</span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Mot de passe"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer text-center">
+              <button type="submit" class="btn btn-dark">Créer Compte</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-//import {emitter} from '../main.js'
+// Import des fonction d'authentification
 import {
-  getFirestore, // Obtenir le Firestore
-  collection, // Utiliser une collection de documents
-  doc, // Obtenir un document par son id
-  getDocs, // Obtenir la liste des documents d'une collection
-  getDoc,
-  addDoc, // Ajouter un document à une collection
-  updateDoc, // Mettre à jour un document dans une collection
-  deleteDoc, // Supprimer un document d'une collection
-  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
-  query, // Permet d'effectuer des requêtes sur Firestore
-  orderBy, // Permet de demander le tri d'une requête query
-} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
-  createUserWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+  getAuth, // Fonction générale d'authentification
+  signInWithEmailAndPassword, // Se connecter avec un email + mot de passe
+  signOut, // Se deconnecter
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+
+//Import de l'emetteur depuis main.js
+import { emitter } from "../main.js";
+
 export default {
+  name: "MonCompte",
   data() {
     return {
       user: {
-        login: "",
+        // Utilisateur : email + mot de passe
         email: "",
         password: "",
       },
-      password2: "",
-      message: "bonjour",
-      type: "password",
+      message: null, // Message de connexion
+      view: false, // Afficher / cacher le mot de passe
+      type: "password", // Type de champs pour le password : password / text pour l'afficher
+      imageData: null, // Image prévisualisée pour création compte
     };
   },
   mounted() {
+    // Montage de la vue
     this.message = "User non connecté";
   },
   methods: {
     onCnx() {
+      // Se connecter avec user et mot de passe
       signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
         .then((response) => {
+          // Connexion OK - mise à jour du user
           this.user = response.user;
+          // Emission evenement de connexion
+          emitter.emit("connectUser", { user: this.user });
           console.log("user", this.user);
-          //emitter.emit('connectUser', {user: this.user});
-          this.message = "user connecté : " + this.user.email;
+          // Mise à jour du message
+          this.message = "User connecté : " + this.user.email;
         })
         .catch((error) => {
-          console.log("erreur connexion", error);
-          this.message = "erreur d'authentification";
+          // Erreur de connexion
+          console.log("Erreur connexion", error);
+          this.message = "Erreur d'authentification";
         });
     },
+
+    // Se deconnecter
     onDcnx() {
+      // Se déconnecter
       signOut(getAuth())
         .then((response) => {
+          // Mise à jour du message
           this.message = "User non connecté";
+          // Ré initialisation des champs
           this.user = {
             email: null,
             password: null,
           };
-          // emitter.emit('deConnectUser', {user:this.user});
+          // Emission évènement de déconnexion
+          emitter.emit("deConnectUser", { user: this.user });
         })
         .catch((error) => {
-          console.log("erreur deconnexion", error);
+          console.log("erreur deconnexion ", error);
         });
     },
-    onCreate() {
-      if (this.user.password === this.password2) {
-        createUserWithEmailAndPassword(
-          getAuth(),
-          this.user.email,
-          this.user.password
-        )
-          .then((response) => {
-            // Signed in
-            const user = response.user;
-            // ...
-          })
-          .catch((error) => {
-            console.log("erreur création", error);
-            this.message = "erreur de création";
-            // ..
-          });
 
-        this.onCnx();
-        onAuthStateChanged(getAuth(), (user) => {
-          if (user) {
-            const uid = user.uid;
-            const firestore = getFirestore();
-            const dbUser = collection(firestore, "users");
-            const docRef = addDoc(dbUser, {
-              uid: uid,
-              admin: false,
-              login: this.user.login,
-            });
-            console.log("document créé avec le id : ", docRef.id);
-          } else {
-            console.log("user pas connecter");
-          }
-        });
+    // Affiche/masque le champs password
+    affiche() {
+      this.view = !this.view;
+      if (this.view) {
+        this.type = "text";
       } else {
-        this.message = "password pas cohérent";
-        console.log("mdp mauvais");
+        this.type = "password";
+      }
+    },
+
+    previewImage: function (event) {
+      // Mise à jour de la photo du participant
+      this.file = this.$refs.file.files[0];
+      // Reference to the DOM input element
+      // Reference du fichier à prévisualiser
+      var input = event.target;
+      // On s'assure que l'on a au moins un fichier à lire
+      if (input.files && input.files[0]) {
+        // Creation d'un filereader
+        // Pour lire l'image et la convertir en base 64
+        var reader = new FileReader();
+        // fonction callback appellée lors que le fichier a été chargé
+        reader.onload = (e) => {
+          // Read image as base64 and set to imageData
+          // lecture du fichier pour mettre à jour
+          // la prévisualisation
+          this.imageData = e.target.result;
+        };
+        // Demarrage du reader pour la transformer en data URL (format base 64)
+        reader.readAsDataURL(input.files[0]);
       }
     },
   },
 };
 </script>
 
-<style></style>
+<style scoped>
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+</style>

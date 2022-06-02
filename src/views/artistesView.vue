@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-screen dark:text-blanc">
+  <div class="container dark:text-blanc">
     <div
       class="mt-10 grid justify-items-center lg:ml-10 lg:justify-items-start"
     >
@@ -17,18 +17,18 @@
     <div class="card-header -mt-4 grid justify-items-center">
       <h2 class="font-open-sans text-xl font-bold uppercase">la liste</h2>
     </div>
-    <hr />
+
     <form>
-      <h3 class="font-spinnaker text-base font-bold capitalize">
+      <h3 class="mt-3 font-spinnaker text-xl font-bold capitalize underline">
         Nouvelle catégorie
       </h3>
-      <div class="input-group">
+      <div class="input-group mt-3 grid justify-items-center">
         <div class="input-group-prepend">
           <span class="input-group-text">Libellé</span>
         </div>
         <input
           type="text"
-          class="form-control dark:text-noir"
+          class="form-control input-group-text flex items-center rounded-md border-2 border-vert dark:bg-noir dark:text-noir"
           v-model="nom"
           required
         />
@@ -38,7 +38,7 @@
           @click="createArtiste()"
           title="Création"
         >
-          dlkgndgb
+          enregistrer
         </button>
       </div>
     </form>
@@ -48,20 +48,33 @@
         <thead>
           <tr>
             <th scope="col">
-              <div class="float-left">Liste des catégories actuelles</div>
-              <span class="float-right">
+              <div
+                class="float-left mt-6 font-spinnaker text-xl font-bold capitalize underline"
+              >
+                Liste des catégories actuelles
+              </div>
+              <span class="float-left">
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">Filtrage</span>
                   </div>
                   <input
                     type="text"
-                    class="form-control dark:text-noir"
+                    class="form-control input-group-text items-center rounded-md border-2 border-vert dark:bg-noir dark:text-noir"
                     v-model="filter"
                   />
-                  <button class="btn btn-light" type="button" title="Filtrage">
-                    sfbsbf
-                  </button>
+                  <div
+                    class="flex border-2 border-noir bg-gradient-to-br from-vert via-jaune to-rouge p-1 text-noir"
+                  >
+                    <SearchIcon class="h-6" />
+                    <button
+                      class="btn btn-light"
+                      type="button"
+                      title="Filtrage"
+                    >
+                      rechercher
+                    </button>
+                  </div>
                 </div>
               </span>
             </th>
@@ -71,16 +84,32 @@
           <tr v-for="artiste in filterByNom" :key="artiste.id">
             <td>
               <form>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">Libellé</span>
+                <div
+                  class="input-group mb-5 rounded-3xl bg-gradient-to-br from-vert via-jaune to-rouge"
+                >
+                  <div
+                    class="input-group-prepend ml-3 p-3 font-open-sans text-xl font-bold uppercase"
+                  >
+                    <span class="input-group-text underline underline-offset-2"
+                      >Libellé</span
+                    >
                   </div>
-                  <input
-                    type="text"
-                    class="form-control dark:text-noir"
-                    v-model="artiste.nom"
-                    required
-                  />
+                  <div class="grid justify-items-center p-2">
+                    <div class="flex border-4 border-noir">
+                      <input
+                        type="text"
+                        class="form-control input-group-text flex w-fit items-center bg-transparent p-1 font-reggae-by-aslam"
+                        v-model="artiste.nom"
+                        required
+                      />
+                      <PencilAltIcon class="h-8" />
+                    </div>
+                    <img
+                      :src="artiste.image"
+                      alt="Photo de l'artiste"
+                      class="h-48 w-1/2 rounded-br-5xl border-4 border-noir object-cover"
+                    />
+                  </div>
                   <button
                     class="btn btn-light"
                     type="submit"
@@ -89,14 +118,17 @@
                   >
                     <i class="fa fa-save fa-lg"></i>
                   </button>
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="deleteArtiste(artiste)"
-                    title="Suppression"
-                  >
-                    delete
-                  </button>
+                  <div class="grid justify-items-center text-noir">
+                    <button
+                      class="btn btn-light -mt-32 -mr-64 h-fit"
+                      type="submit"
+                      @click.prevent="deleteArtiste(artiste)"
+                      title="Suppression"
+                    >
+                      <TrashIcon class="h-10" />
+                      delete
+                    </button>
+                  </div>
                 </div>
               </form>
             </td>
@@ -108,6 +140,8 @@
 </template>
 
 <script>
+import { TrashIcon, SearchIcon, PencilAltIcon } from "@heroicons/vue/outline";
+
 import {
   getFirestore,
   collection,
@@ -119,8 +153,20 @@ import {
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+  uploadString, // Permet d'uploader sur le Cloud Storage une image en Base64
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+
 export default {
   name: "ListeView",
+  components: {
+    TrashIcon,
+    SearchIcon,
+    PencilAltIcon,
+  },
   data() {
     return {
       nom: null, // Pour la création d'une catégorie
@@ -170,6 +216,19 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
+
+        this.listeArtisteSynchro.forEach(function (artiste) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "image/" + artiste.image);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              artiste.image = url;
+              console.log("artiste", artiste);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
       });
     },
     async createArtiste() {
