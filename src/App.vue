@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gris">
+  <div class="bg-gris dark:bg-noir dark:text-blanc">
     <header class="sticky top-0 z-40 h-16 w-full bg-vert px-3 lg:pl-8 lg:pr-8">
       <div class="flex h-full w-full items-center justify-between">
         <div class="pt-9">
@@ -51,8 +51,8 @@
     </header>
     <div class="border-t-4 border-b-4 border-noir"><hr /></div>
     <RouterView />
-    <footer>
-      <div class="bg-noir pt-4 lg:flex lg:justify-around">
+    <footer class="">
+      <div class="bg-noir pt-4 dark:bg-vert lg:flex lg:justify-around">
         <div class="mx-5 h-10">
           <div
             class="flex justify-between text-base font-semibold capitalize text-blanc"
