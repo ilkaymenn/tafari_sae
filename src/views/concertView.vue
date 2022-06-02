@@ -19,7 +19,7 @@
         <div class="lg:m-16 lg:flex lg:flex-col">
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge dark:text-noir lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-noir transition-colors duration-150 hover:border-2 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge dark:text-noir lg:mb-12"
           >
             tous
           </button>

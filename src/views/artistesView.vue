@@ -1,17 +1,37 @@
 <template>
-  <div class="container dark:text-blanc">
-    <div class="card-header">
-      <h5>Liste des catégories</h5>
+  <div class="container h-screen dark:text-blanc">
+    <div
+      class="mt-10 grid justify-items-center lg:ml-10 lg:justify-items-start"
+    >
+      <div class="bg-gradient-to-br from-vert via-jaune to-rouge p-2">
+        <h2 class="font-reggae-by-aslam text-4xl capitalize text-blanc">
+          les artistes
+        </h2>
+        <h2
+          class="-mt-9 ml-0.5 font-reggae-by-aslam text-4xl capitalize text-noir"
+        >
+          les artistes
+        </h2>
+      </div>
+    </div>
+    <div class="card-header -mt-4 grid justify-items-center">
+      <h2 class="font-open-sans text-xl font-bold uppercase">la liste</h2>
     </div>
     <hr />
-
     <form>
-      <h6>Nouvelle catégorie</h6>
+      <h3 class="font-spinnaker text-base font-bold capitalize">
+        Nouvelle catégorie
+      </h3>
       <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text">Libellé</span>
         </div>
-        <input type="text" class="form-control" v-model="nom" required />
+        <input
+          type="text"
+          class="form-control dark:text-noir"
+          v-model="nom"
+          required
+        />
         <button
           class="btn btn-light"
           type="button"
@@ -34,7 +54,11 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text">Filtrage</span>
                   </div>
-                  <input type="text" class="form-control" v-model="filter" />
+                  <input
+                    type="text"
+                    class="form-control dark:text-noir"
+                    v-model="filter"
+                  />
                   <button class="btn btn-light" type="button" title="Filtrage">
                     sfbsbf
                   </button>
@@ -53,7 +77,7 @@
                   </div>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control dark:text-noir"
                     v-model="artiste.nom"
                     required
                   />
