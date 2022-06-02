@@ -10,6 +10,7 @@ import mentionslegalesView from "../views/mentionslegalesView.vue";
 import page404View from "../views/page404View.vue";
 import pageEnConstructionView from "../views/pageEnConstructionView.vue";
 import chatView from "../views/chatView.vue";
+import moncompteView from "../views/moncompteView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,6 +41,11 @@ const router = createRouter({
       path: "/chat",
       name: "chatView",
       component: chatView,
+    },
+    {
+      path: "/moncompte",
+      name: "moncompteView",
+      component: moncompteView,
     },
   ],
 });

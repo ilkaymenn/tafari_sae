@@ -39,6 +39,12 @@
             <RouterLink to="/contact" @click="MenuOpen = !MenuOpen"
               >contact</RouterLink
             >
+            <RouterLink to="/moncompte" @click="MenuOpen = !MenuOpen"
+              >mon compte</RouterLink
+            >
+            <RouterLink to="/chat" @click="MenuOpen = !MenuOpen"
+              >chat</RouterLink
+            >
           </ul>
         </nav>
       </div>
