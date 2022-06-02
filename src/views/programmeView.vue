@@ -15,7 +15,7 @@
       </div>
     </div>
     <div
-      class="grid sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4"
+      class="grid dark:text-noir sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4"
     >
       <div>
         <card

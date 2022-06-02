@@ -8,14 +8,17 @@
           </RouterLink>
         </div>
         <div class="lg:hidden">
-          <MenuIcon class="w-8 cursor-pointer" @click="MenuOpen = !MenuOpen" />
+          <MenuIcon
+            class="w-8 cursor-pointer text-blanc"
+            @click="MenuOpen = !MenuOpen"
+          />
         </div>
         <nav
           class="absolute left-0 top-0 h-screen w-full -translate-y-[200%] bg-vert pl-2 text-lg lg:relative lg:-top-16 lg:h-min lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'"
         >
           <XIcon
-            class="float-right m-3 w-10 lg:hidden"
+            class="float-right m-3 w-10 text-blanc lg:hidden"
             @click="MenuOpen = !MenuOpen"
           />
           <ul

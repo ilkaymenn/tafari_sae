@@ -19,7 +19,7 @@
         <div class="lg:m-16 lg:flex lg:flex-col">
           <button
             type="submit"
-            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge lg:mb-12"
+            class="focus:shadow-outline h-10 rounded-3xl border-2 border-noir bg-jaune px-5 font-open-sans text-lg uppercase text-blanc transition-colors duration-150 hover:border-2 hover:bg-gradient-to-b hover:from-vert hover:via-jaune hover:to-rouge dark:text-noir lg:mb-12"
           >
             tous
           </button>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div
-        class="mb-10 grid sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:col-span-2 lg:grid lg:grid-cols-4"
+        class="mb-10 grid dark:text-noir sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:col-span-2 lg:grid lg:grid-cols-4"
       >
         <div>
           <card

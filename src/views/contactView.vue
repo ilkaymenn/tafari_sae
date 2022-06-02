@@ -16,7 +16,7 @@
     </div>
     <div class="m-8 h-screen lg:grid lg:grid-cols-2">
       <div class="lg:-mt-96 lg:grid lg:place-content-center">
-        <p class="ml-5 font-spinnaker text-2xl">
+        <p class="ml-5 font-spinnaker text-2xl dark:text-blanc">
           Contactez nous pour plus d’informations !
         </p>
         <div class="invisible mt-3 flex h-80 place-content-center lg:visible">
@@ -28,13 +28,15 @@
           <form method="" action="">
             <label class="mb-10 block">
               <div
-                class="flex items-center rounded-md border-2 border-vert bg-blanc shadow-md shadow-vert"
+                class="flex items-center rounded-md border-2 border-vert bg-blanc shadow-md shadow-vert dark:bg-noir"
               >
-                <UserRemoveIcon class="m-1 ml-2 h-6 animate-pulse" />
+                <UserRemoveIcon
+                  class="m-1 ml-2 h-6 animate-pulse dark:bg-noir"
+                />
                 <input
                   name="name"
                   type="text"
-                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none dark:bg-noir"
                   placeholder="Nom"
                   required
                 />
@@ -42,13 +44,13 @@
             </label>
             <label class="mb-10 block">
               <div
-                class="flex items-center rounded-md border-2 border-jaune bg-blanc shadow-md shadow-jaune"
+                class="flex items-center rounded-md border-2 border-jaune bg-blanc shadow-md shadow-jaune dark:bg-noir"
               >
                 <PencilIcon class="m-1 ml-2 h-6 animate-pulse" />
                 <input
                   name="email"
                   type="email"
-                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none dark:bg-noir"
                   placeholder="E-mail"
                   required
                 />
@@ -56,12 +58,12 @@
             </label>
             <label class="blocks mb-10">
               <div
-                class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge"
+                class="flex items-start rounded-md border-2 border-rouge bg-blanc shadow-md shadow-rouge dark:bg-noir"
               >
                 <MailIcon class="m-1 ml-2 h-6 animate-bounce" />
                 <textarea
                   name="message"
-                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none"
+                  class="ml-2 block w-full rounded-md font-open-sans text-lg focus:outline-none dark:bg-noir"
                   rows="4"
                   placeholder="Message"
                   required
@@ -72,7 +74,9 @@
               <div class="ml-3 mt-20 lg:w-1/3"></div>
               <label class="block">
                 <input class="mr-2 leading-tight lg:mt-5" type="checkbox" />
-                <span class="font-sans text-lg font-semibold text-noir">
+                <span
+                  class="font-sans text-lg font-semibold text-noir dark:text-blanc"
+                >
                   Send me your newsletter !
                 </span>
               </label>

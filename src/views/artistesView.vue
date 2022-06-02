@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container dark:text-blanc">
     <div class="card-header">
       <h5>Liste des catégories</h5>
     </div>
