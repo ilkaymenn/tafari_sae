@@ -1,0 +1,81 @@
+i {
+  cursor: pointer;
+}
+
+/*.bordure {border:1px solid black; background-color:#F9F9F9; text-align:center; height:150px;}
+*/
+.centree {
+  text-align: center;
+}
+
+.container {
+  color: lightgray;
+}
+
+.imageSmall {
+  margin: 0 auto;
+  width: 100px;
+}
+.hauteur {
+  height: 100%;
+
+  padding: 5px;
+}
+.titre {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+.libelle {
+  text-align: left;
+  color: white;
+  font-size: 1.1rem;
+}
+.texte {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.resume {
+  font-size: 0.7rem;
+}
+.listeCase {
+  margin-right: 10px;
+}
+
+#video_background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+.panel-info {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px;
+}
+.nav-pills li {
+  margin: 5px;
+}
+.synopsis {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Custom des liens de navigation */
+nav .navbar-nav a {
+  color: lightgray !important;
+  text-decoration: none;
+}
+nav .navbar-brand a {
+  color: lightgray !important;
+  text-decoration: none;
+}
+html,
+#app {
+  background-color: #32383e;
+}

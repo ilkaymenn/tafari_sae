@@ -1,6 +1,6 @@
 <template>
-  <div class="container bg-vert">
-    <div class="card bg-dark">
+  <div class="bg- container">
+    <div class="card bg-vert">
       <div class="row">
         <div class="col-6">
           <div class="card-header">
