@@ -194,7 +194,7 @@ export default {
     // Les fonctions
     // obtenir les utilisateurs de users
     async getUsers() {
-      // Obtenir les inofrmations du user connecté
+      // Obtenir les informations du user connecté
       await getAuth().onAuthStateChanged(
         function (user) {
           if (user) {
