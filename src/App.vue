@@ -2,11 +2,22 @@
   <div class="bg-gris dark:bg-noir dark:text-blanc">
     <header class="sticky top-0 z-40 h-16 w-full bg-vert px-3 lg:pl-8 lg:pr-8">
       <div class="flex h-full w-full items-center justify-between">
-        <span v-if="avatar != null" class="mr-3">
-          <img class="avatar" :src="avatar" />
-        </span>
-        <RouterLink to="/">{{ name }}</RouterLink>
-        <div class="pt-9">
+        <div class="grid">
+          <span v-if="avatar != null" class="mr-3">
+            <img class="avatar h-10 w-auto" :src="avatar" />
+            <RouterLink to="/" class="text-xs">{{ name }}</RouterLink>
+          </span>
+        </div>
+        <div v-if="avatar != null" class="pt-9">
+          <RouterLink to="/">
+            <img
+              src="./../public/tafari-logo.png"
+              alt="Logo Tafari"
+              class="hidden"
+            />
+          </RouterLink>
+        </div>
+        <div v-else class="pt-9">
           <RouterLink to="/">
             <img src="./../public/tafari-logo.png" alt="Logo Tafari" />
           </RouterLink>

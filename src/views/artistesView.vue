@@ -14,18 +14,14 @@
         </h2>
       </div>
     </div>
-    <div class="card-header -mt-4 grid justify-items-center">
-      <h2 class="font-open-sans text-xl font-bold uppercase">la liste</h2>
-    </div>
 
     <form>
-      <h3 class="mt-3 font-spinnaker text-xl font-bold capitalize underline">
-        Nouvelle catégorie
+      <h3
+        class="mt-3 font-spinnaker text-xl font-bold capitalize text-noir underline"
+      >
+        Nouvel artiste
       </h3>
       <div class="input-group mt-3 grid justify-items-center">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Libellé</span>
-        </div>
         <input
           type="text"
           class="form-control input-group-text flex items-center rounded-md border-2 border-vert dark:bg-noir dark:text-noir"
@@ -33,12 +29,12 @@
           required
         />
         <button
-          class="btn btn-light"
+          class="btn btn-light flex border-2 border-noir bg-gradient-to-br from-vert via-jaune to-rouge p-1 text-noir"
           type="button"
           @click="createArtiste()"
           title="Création"
         >
-          enregistrer
+          Enregistrer
         </button>
       </div>
     </form>
@@ -49,22 +45,22 @@
           <tr>
             <th scope="col">
               <div
-                class="float-left mt-6 font-spinnaker text-xl font-bold capitalize underline"
+                class="float-left mt-2 font-spinnaker text-xl font-bold capitalize text-noir underline"
               >
                 Liste des catégories actuelles
               </div>
               <span class="float-left">
                 <div class="input-group">
-                  <div class="input-group-prepend">
+                  <div class="input-group-prepend h-12">
                     <span class="input-group-text">Filtrage</span>
                   </div>
                   <input
                     type="text"
-                    class="form-control input-group-text items-center rounded-md border-2 border-vert dark:bg-noir dark:text-noir"
+                    class="form-control input-group-text h-12 items-center rounded-md border-2 border-vert dark:bg-noir dark:text-noir"
                     v-model="filter"
                   />
                   <div
-                    class="flex border-2 border-noir bg-gradient-to-br from-vert via-jaune to-rouge p-1 text-noir"
+                    class="flex h-12 border-2 border-noir bg-gradient-to-br from-vert via-jaune to-rouge p-1 text-noir"
                   >
                     <SearchIcon class="h-6" />
                     <button
@@ -81,53 +77,50 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="artiste in filterByNom" :key="artiste.id">
+          <tr>
             <td>
               <form>
-                <div
-                  class="input-group mb-5 rounded-3xl bg-gradient-to-br from-vert via-jaune to-rouge"
-                >
+                <div class="input-group m-3">
                   <div
-                    class="input-group-prepend ml-3 p-3 font-open-sans text-xl font-bold uppercase"
+                    class="mx-auto grid max-w-5xl grid-flow-row-dense gap-7 sm:grid-cols-[repeat(auto-fit,minmax(22rem,auto))] lg:grid-cols-[repeat(auto-fit,minmax(15rem,auto))]"
                   >
-                    <span class="input-group-text underline underline-offset-2"
-                      >Libellé</span
+                    <div
+                      to="/programmation"
+                      v-for="artiste in filterByNom"
+                      :key="artiste.id"
                     >
-                  </div>
-                  <div class="grid justify-items-center p-2">
-                    <div class="flex border-4 border-noir">
-                      <input
-                        type="text"
-                        class="form-control input-group-text flex w-fit items-center bg-transparent p-1 font-reggae-by-aslam"
-                        v-model="artiste.nom"
-                        required
-                      />
-                      <PencilAltIcon class="h-8" />
+                      <div>
+                        <img
+                          class="center h-48 w-3/4 rounded-t-lg object-cover"
+                          :src="artiste.image"
+                          alt="imgalt"
+                        />
+                        <div>
+                          <input
+                            type="text"
+                            class="w-3/4 rounded-br-3xl rounded-bl-sm bg-rouge text-2xl font-bold uppercase text-white"
+                            v-model="artiste.nom"
+                          />
+                        </div>
+                      </div>
+
+                      <button
+                        class="btn btn-light"
+                        type="submit"
+                        @click.prevent="updateArtiste(artiste)"
+                        title="Modification"
+                      >
+                        <i class="fa fa-save fa-lg"></i>
+                      </button>
+                      <button
+                        class="btn btn-light focus:shadow-outline font-homenaje m-1 h-10 rounded-xl border-2 border-black bg-white px-5 text-lg text-black transition-colors duration-150 hover:bg-red-700 hover:text-white"
+                        type="submit"
+                        @click.prevent="deleteArtiste(artiste)"
+                        title="Suppression"
+                      >
+                        delete
+                      </button>
                     </div>
-                    <img
-                      :src="artiste.image"
-                      alt="Photo de l'artiste"
-                      class="h-48 w-1/2 rounded-br-5xl border-4 border-noir object-cover"
-                    />
-                  </div>
-                  <button
-                    class="btn btn-light"
-                    type="submit"
-                    @click.prevent="updateArtiste(artiste)"
-                    title="Modification"
-                  >
-                    <i class="fa fa-save fa-lg"></i>
-                  </button>
-                  <div class="grid justify-items-center text-noir">
-                    <button
-                      class="btn btn-light -mt-32 -mr-64 h-fit"
-                      type="submit"
-                      @click.prevent="deleteArtiste(artiste)"
-                      title="Suppression"
-                    >
-                      <TrashIcon class="h-10" />
-                      delete
-                    </button>
                   </div>
                 </div>
               </form>
@@ -152,7 +145,6 @@ import {
   deleteDoc,
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
-
 import {
   getStorage, // Obtenir le Cloud Storage
   ref, // Pour créer une référence à un fichier à uploader
@@ -184,7 +176,6 @@ export default {
         return 0;
       });
     },
-
     filterByNom: function () {
       if (this.filter.length > 0) {
         let filter = this.filter.toLowerCase();
@@ -196,7 +187,6 @@ export default {
       }
     },
   },
-
   mounted() {
     this.getArtisteSynchro();
   },
@@ -216,7 +206,6 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-
         this.listeArtisteSynchro.forEach(function (artiste) {
           const storage = getStorage();
           const spaceRef = ref(storage, "image/" + artiste.image);
@@ -239,7 +228,6 @@ export default {
       });
       console.log("document crée avec le id : ", docRef.id);
     },
-
     async updateArtiste(artiste) {
       const firestore = getFirestore();
       const docRef = doc(firestore, "artiste", artiste.id);
@@ -247,7 +235,6 @@ export default {
         nom: artiste.nom,
       });
     },
-
     async deleteArtiste(artiste) {
       const firestore = getFirestore();
       const docRef = doc(firestore, "artiste", artiste.id);
@@ -256,5 +243,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
