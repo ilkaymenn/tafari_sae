@@ -270,7 +270,7 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log("chatFrom", this.chatFrom);
+        // console.log("chatFrom", this.chatFrom);
 
         // Liste des users selectionne / connecté
         let list2 = [this.userSelected.uid, this.user.uid];
@@ -282,10 +282,11 @@ export default {
             id: doc.id,
             ...doc.data(),
           }));
+          // console.log("chatTo", this.chatTo);
 
           // Fusion des 2 chats from et to dans le chat
           this.chat = this.chatFrom.concat(this.chatTo);
-          //console.log("chat", this.chat);
+          // console.log("chat", this.chat);
         });
       });
     },
