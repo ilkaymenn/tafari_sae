@@ -265,12 +265,12 @@ export default {
       // Requête
       let q1 = query(dbChat, where("fil", "==", list1));
       // Liste synchronisée
-
       await onSnapshot(q1, (snapshot) => {
         this.chatFrom = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
+        console.log("chatFrom", this.chatFrom);
 
         // Liste des users selectionne / connecté
         let list2 = [this.userSelected.uid, this.user.uid];
