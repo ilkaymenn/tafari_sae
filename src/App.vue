@@ -207,7 +207,7 @@ export default {
 
 <style>
 /* Import Styles application */
-@import "@/assets/style.css";
+@import "./assets/style.css";
 
 .avatar {
   vertical-align: middle;
