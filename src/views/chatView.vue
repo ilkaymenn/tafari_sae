@@ -216,6 +216,8 @@ export default {
           id: doc.id,
           ...doc.data(),
         }));
+        // console.log("listeUsers", this.listeUsers); // Petite vérification, pour voir si on obtient bien tous les users
+
         // Récupération de l'url des avatars
         this.listeUsers.forEach(function (user) {
           // Obtenir le Cloud Storage
@@ -232,19 +234,25 @@ export default {
               console.log("erreur downloadurl", error);
             });
         });
+        //console.log("listeUsers", this.listeUsers); // Petite vérification, pour voir si on obtient bien tous les users
 
         // Récupérer les infos complémentaires du user connecté
         this.userInfo = this.listeUsers.filter(
           (user) => user.uid == this.user.uid
         );
-        //console.log("userInfo", this.userInfo);
+        console.log("userInfo", this.userInfo); // Voir le user info de celui connecté
         // Suppression du user connecté de la liste
         this.listeUsers = this.listeUsers.filter(
           (user) => user.uid != this.user.uid
         );
-        //console.log("ListeUsers", this.listeUsers);
+        console.log("ListeUsers", this.listeUsers); // Regarder si le reste de la liste a marcher
       });
     },
+
+    // Vérifie si on a bien un user qui a été sélectionné
+    // selectUser() {
+    //   console.log("user sélectionné", this.userSelected);
+    // },
 
     async selectUser() {
       this.message = null;
