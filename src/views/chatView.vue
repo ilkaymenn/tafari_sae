@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container bg-noir">
     <div class="card-header">
       <h5 style="color: white">Chat</h5>
     </div>
@@ -194,7 +194,7 @@ export default {
     // Les fonctions
     // obtenir les utilisateurs de users
     async getUsers() {
-      // Obtenir les inofrmations du user connecté
+      // Obtenir les informations du user connecté
       await getAuth().onAuthStateChanged(
         function (user) {
           if (user) {
@@ -326,7 +326,7 @@ export default {
       let mois = dt[1];
       let annee = dt[2];
       // date en format bdd
-      today = annee + "-" + mois + "-" + jour + " " + tab[1].trim();
+      today = annee + "-" + mois + "-" + jour + " " + tab[1].trim(); // .trim => permet de supprimer les espaces en trop devant et derrière une chaîne de caractères
       return today;
     },
 
