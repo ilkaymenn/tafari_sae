@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-noir">
+  <div class="container h-screen">
     <div class="card-header">
       <h5 style="color: white">Chat</h5>
     </div>
@@ -47,7 +47,7 @@
 
         <h5>Vos fils de discussion avec : {{ userSelected.login }}</h5>
         <div v-if="chat.length > 0">
-          <table class="text-light table">
+          <table class="table text-slate-900">
             <tbody>
               <tr v-for="disc in chat" :key="disc.uid">
                 <td>
@@ -70,6 +70,7 @@
                     type="button"
                     @click="deleteFil(disc)"
                     title="Supprimer ce fil"
+                    style="background-color: blue"
                   >
                     <i class="fa fa-trash fa-lg"></i>
                   </button>
