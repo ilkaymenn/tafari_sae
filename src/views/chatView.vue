@@ -6,7 +6,7 @@
 
     <div v-if="user == null">
       <h6 class="alert alert-warning text-center" role="alert">
-        Vous devez être connecté pour utiliser le Chat !!
+        Vous devez être connecté pour utiliser le Chat !!!
       </h6>
     </div>
     <div v-else>
