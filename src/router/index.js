@@ -24,6 +24,7 @@ import page404View from "../views/page404View.vue";
 import pageEnConstructionView from "../views/pageEnConstructionView.vue";
 import chatView from "../views/chatView.vue";
 import moncompteView from "../views/moncompteView.vue";
+import guidedestyleView from "../views/guidedestyleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -64,6 +65,11 @@ const router = createRouter({
       path: "/moncompte",
       name: "moncompteView",
       component: moncompteView,
+    },
+    {
+      path: "/guidedestyle",
+      name: "guidedestyleView",
+      component: guidedestyleView,
     },
   ],
 });

@@ -42,6 +42,9 @@
             <RouterLink to="/" class="lg:hidden" @click="MenuOpen = !MenuOpen"
               >accueil</RouterLink
             >
+            <RouterLink to="/guidedestyle" @click="MenuOpen = !MenuOpen"
+              >guide de style</RouterLink
+            >
             <RouterLink to="/programme" @click="MenuOpen = !MenuOpen"
               >programmation</RouterLink
             >

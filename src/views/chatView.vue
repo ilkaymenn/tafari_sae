@@ -1,7 +1,7 @@
 <template>
-  <div class="container h-screen">
+  <div class="container h-screen text-noir">
     <div class="card-header">
-      <h5 style="color: white">Chat</h5>
+      <h5 style="color: black">Chat</h5>
     </div>
 
     <div v-if="user == null">
@@ -80,7 +80,7 @@
         </div>
         <div v-else>Aucun fil de discussion</div>
 
-        <hr style="background-color: white" />
+        <hr style="background-color: black" />
 
         <div v-if="discussion != null">
           <h5>Discussion : {{ discussion.libelle }}</h5>
