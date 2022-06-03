@@ -70,7 +70,6 @@
                     type="button"
                     @click="deleteFil(disc)"
                     title="Supprimer ce fil"
-                    style="background-color: blue"
                   >
                     <i class="fa fa-trash fa-lg"></i>
                   </button>
